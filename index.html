@@ -5,6 +5,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="Estilo.css">
 	<title>Anthony Flores</title>
+
+	<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Cognome - Branding Personale</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            cursor: none; /* Nasconde il cursore predefinito */
+        }
+        .cursor {
+            width: 10px; /* Dimensioni del punto del cursore */
+            height: 10px;
+            border-radius: 50%; /* Rende il punto circolare */
+            background-color: #000; /* Colore del punto */
+            position: fixed; /* Posiziona il punto in modo che segua il cursore */
+            pointer-events: none; /* Il punto non deve interagire con gli eventi del mouse */
+            z-index: 9999; /* Assicura che il punto sia sopra tutti gli altri elementi */
+        }
+    </style>
+</head>
+<body>
+    <!-- Aggiungi un elemento div per rappresentare il cursore -->
+    <div class="cursor"></div>
+    
+    <!-- Il resto del tuo contenuto HTML -->
+    <div class="container">
+        <header>
+            <h1>Nome Cognome</h1>
+        </header>
+        <!-- Altre sezioni del tuo sito -->
+    </div>
+
+    <!-- JavaScript per far muovere il punto del cursore -->
+    <script>
+        // Funzione per far seguire il punto del cursore
+        document.addEventListener("mousemove", function(event) {
+            var cursor = document.querySelector(".cursor");
+            cursor.style.left = event.clientX + "px";
+            cursor.style.top = event.clientY + "px";
+        });
+    </script>
+</body>
+</html>
+
 </head>
 <body>
     <header>
