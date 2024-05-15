@@ -17,12 +17,12 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px;
             text-align: center;
         }
         nav {
             background-color: #444;
-            padding: 10px 0;
+            padding: 10px;
         }
         nav ul {
             list-style: none;
@@ -39,18 +39,43 @@
             text-decoration: none;
             font-weight: bold;
         }
-        main {
-            padding: 20px;
+        .hero {
             text-align: center;
+            padding: 50px 20px;
+            background-color: #f0f0f0;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .books, .news {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .book, .news-item {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            width: calc(33% - 40px);
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
+            padding: 20px;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
         .cursor {
             width: 10px;
@@ -81,9 +106,6 @@
             color: #fff;
             border: none;
         }
-        .contact-info {
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -95,24 +117,51 @@
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#about">Acerca de</a></li>
-            <li><a href="#services">Servicios</a></li>
+            <li><a href="#books">Libros</a></li>
+            <li><a href="#news">Noticias y Eventos</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <h1>Bienvenido a la página de Anthony Flores</h1>
+        <p>Ingeniero Civil e Ingeniero de Datos</p>
+    </div>
     <main>
-        <section id="welcome">
-            <h2>Bienvenido a mi página web</h2>
-            <p>Anthony Flores - Ingeniero Civil e Ingeniero de Datos.</p>
-        </section>
-        <section id="about">
+        <section id="about" class="section">
             <h2>Acerca de</h2>
             <p>Información sobre mí, mi carrera y mis intereses.</p>
         </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <p>Descripción de los servicios que ofrezco.</p>
+        <section id="books" class="section books">
+            <h2>Libros</h2>
+            <div class="book">
+                <h3>Libro 1</h3>
+                <p>Descripción del Libro 1.</p>
+            </div>
+            <div class="book">
+                <h3>Libro 2</h3>
+                <p>Descripción del Libro 2.</p>
+            </div>
+            <div class="book">
+                <h3>Libro 3</h3>
+                <p>Descripción del Libro 3.</p>
+            </div>
         </section>
-        <section id="contact">
+        <section id="news" class="section news">
+            <h2>Noticias y Eventos</h2>
+            <div class="news-item">
+                <h3>Evento 1</h3>
+                <p>Descripción del Evento 1.</p>
+            </div>
+            <div class="news-item">
+                <h3>Evento 2</h3>
+                <p>Descripción del Evento 2.</p>
+            </div>
+            <div class="news-item">
+                <h3>Evento 3</h3>
+                <p>Descripción del Evento 3.</p>
+            </div>
+        </section>
+        <section id="contact" class="section">
             <h2>Contacto</h2>
             <form action="https://example.com/submit-form" method="post">
                 <label for="name">Nombre:</label>
@@ -134,6 +183,10 @@
     </main>
     <footer>
         <p>Derechos de autor &copy; 2023 Anthony Flores</p>
+        <p>Sígueme en 
+            <a href="https://twitter.com" target="_blank">Twitter</a>, 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
     </footer>
     <script>
         document.addEventListener("mousemove", function(event) {
