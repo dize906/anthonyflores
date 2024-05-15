@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="Estilo.css">
-	<title>Anthony Flores</title>
-
-	<!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome Cognome - Branding Personale</title>
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+    <title>Anthony Flores - Mi Página Web</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -19,47 +12,60 @@
             padding: 0;
             background-color: #f7f7f7;
             color: #333;
-            cursor: none; /* Nasconde il cursore predefinito */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
         .cursor {
-            width: 10px; /* Dimensioni del punto del cursore */
+            width: 10px;
             height: 10px;
-            border-radius: 50%; /* Rende il punto circolare */
-            background-color: #000; /* Colore del punto */
-            position: fixed; /* Posiziona il punto in modo che segua il cursore */
-            pointer-events: none; /* Il punto non deve interagire con gli eventi del mouse */
-            z-index: 9999; /* Assicura che il punto sia sopra tutti gli altri elementi */
+            border-radius: 50%;
+            background-color: #000;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
         }
     </style>
 </head>
 <body>
-    <!-- Aggiungi un elemento div per rappresentare il cursore -->
     <div class="cursor"></div>
-    
-    <!-- Il resto del tuo contenuto HTML -->
-    <div class="container">
-        <header>
-            <h1>Nome Cognome</h1>
-        </header>
-        <!-- Altre sezioni del tuo sito -->
-    </div>
-
-    <!-- JavaScript per far muovere il punto del cursore -->
-    <script>
-        // Funzione per far seguire il punto del cursore
-        document.addEventListener("mousemove", function(event) {
-            var cursor = document.querySelector(".cursor");
-            cursor.style.left = event.clientX + "px";
-            cursor.style.top = event.clientY + "px";
-        });
-    </script>
-</body>
-</html>
-
-</head>
-<body>
     <header>
-        <h2>Mi Página Web</h2>
+        <h2>Mi Página Web - Anthony Flores</h2>
     </header>
     <nav>
         <ul>
@@ -71,76 +77,29 @@
     </nav>
     <main>
         <h3>Bienvenido a mi página web</h3>
-        <p>Anthony Flores Ingniero Civil - Ingeniero de Datos.</p>
+        <p>Anthony Flores - Ingeniero Civil e Ingeniero de Datos.</p>
+        <section>
+            <h4>Acerca de</h4>
+            <p>Información sobre mí, mi carrera y mis intereses.</p>
+        </section>
+        <section>
+            <h4>Servicios</h4>
+            <p>Descripción de los servicios que ofrezco.</p>
+        </section>
+        <section>
+            <h4>Contacto</h4>
+            <p>Formulario de contacto o información de contacto.</p>
+        </section>
     </main>
     <footer>
         <p>Derechos de autor &copy; 2023 Mi Empresa</p>
     </footer>
-</body>
-</html
-
+    <script>
+        document.addEventListener("mousemove", function(event) {
+            var cursor = document.querySelector(".cursor");
+            cursor.style.left = event.clientX + "px";
+            cursor.style.top = event.clientY + "px";
+        });
+    </script>
 </body>
 </html>
-```\<!DOCTYPE html>
-
-\<html>
-
-\<head>
-
-&#x9;\<meta charset="utf-8">
-
-&#x9;\<meta name="viewport" content="width=device-width, initial-scale=1">
-
-&#x9;\<link rel="stylesheet" type="text/css" href="Estilo.css">
-
-&#x9;\<title>Mi primera Pagina\</title>
-
-\</head>
-
-\<body>
-
-&#x20;   \<header>
-
-&#x20;       \<h2>Mi Página Web\</h2>
-
-&#x20;   \</header>
-
-&#x20;   \<nav>
-
-&#x20;       \<ul>
-
-&#x20;           \<li>\<a href="#">Inicio\</a>\</li>
-
-&#x20;           \<li>\<a href="#">Acerca de\</a>\</li>
-
-&#x20;           \<li>\<a href="#">Servicios\</a>\</li>
-
-&#x20;           \<li>\<a href="#">Contacto\</a>\</li>
-
-&#x20;       \</ul>
-
-&#x20;   \</nav>
-
-&#x20;   \<main>
-
-&#x20;       \<h3>Bienvenido a mi página web\</h3>
-
-&#x20;       \<p>Esta es una página de ejemplo.\</p>
-
-&#x20;   \</main>
-
-&#x20;   \<footer>
-
-&#x20;       \<p>Derechos de autor \&copy; 2023 Mi Empresa\</p>
-
-&#x20;   \</footer>
-
-\</body>
-
-\</html
-
-
-
-\</body>
-
-\</html>
