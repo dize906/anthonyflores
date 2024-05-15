@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Estilo.css">
     <title>Anthony Flores - Mi Página Web</title>
+    <meta name="description" content="Anthony Flores, Ingeniero Civil e Ingeniero de Datos. Conoce más sobre mis servicios y cómo contactarme.">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -60,39 +61,79 @@
             pointer-events: none;
             z-index: 9999;
         }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="cursor"></div>
+    <div class="cursor" aria-hidden="true"></div>
     <header>
-        <h2>Mi Página Web - Anthony Flores</h2>
+        <h1>Anthony Flores</h1>
     </header>
     <nav>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
     <main>
-        <h3>Bienvenido a mi página web</h3>
-        <p>Anthony Flores - Ingeniero Civil e Ingeniero de Datos.</p>
-        <section>
-            <h4>Acerca de</h4>
+        <section id="welcome">
+            <h2>Bienvenido a mi página web</h2>
+            <p>Anthony Flores - Ingeniero Civil e Ingeniero de Datos.</p>
+        </section>
+        <section id="about">
+            <h2>Acerca de</h2>
             <p>Información sobre mí, mi carrera y mis intereses.</p>
         </section>
-        <section>
-            <h4>Servicios</h4>
+        <section id="services">
+            <h2>Servicios</h2>
             <p>Descripción de los servicios que ofrezco.</p>
         </section>
-        <section>
-            <h4>Contacto</h4>
-            <p>Formulario de contacto o información de contacto.</p>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="https://example.com/submit-form" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: anthonyflores@example.com</p>
+                <p>Teléfono: +123 456 7890</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Derechos de autor &copy; 2023 Mi Empresa</p>
+        <p>Derechos de autor &copy; 2023 Anthony Flores</p>
     </footer>
     <script>
         document.addEventListener("mousemove", function(event) {
