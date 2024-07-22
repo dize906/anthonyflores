@@ -83,3 +83,31 @@ footer {
     background: #333;
     color: #fff;
 }
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+#intro, #key-services, #cta {
+    margin-bottom: 2em;
+}
+
+#key-services ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#key-services li {
+    margin-bottom: 0.5em;
+}
