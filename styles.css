@@ -111,3 +111,26 @@ footer {
 #key-services li {
     margin-bottom: 0.5em;
 }
+
+
+#profile, #expertise, #education, #skills, #languages {
+    margin-bottom: 2em;
+}
+
+#expertise ul, #education ul, #skills ul, #languages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#expertise li, #education li, #skills li, #languages li {
+    margin-bottom: 0.5em;
+    padding-left: 20px;
+    position: relative;
+}
+
+#expertise li:before, #education li:before, #skills li:before, #languages li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
