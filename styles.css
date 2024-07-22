@@ -192,3 +192,75 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 2rem;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project h3 {
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-info ul {
+    padding-left: 20px;
+}
+
+.project-images {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        flex-direction: column;
+    }
+    
+    .project-images {
+        flex-direction: column;
+    }
+}
+
+
